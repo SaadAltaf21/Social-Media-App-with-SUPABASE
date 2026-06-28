@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media - Feed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">SocialApp</div>
+        <button id="logout-btn" class="btn-logout">Logout</button>
+    </nav>
+
+    <div id="feedContainer" class="feed-container">
+        
+        <div class="create-post-card">
+            <h3>Create a Post</h3>
+            <form id="post-form">
+                <textarea id="post-text" placeholder="What's on your mind?" required></textarea>
+                <input type="url" id="post-image-url" placeholder="Paste Image URL here (Optional)">
+                <button type="submit" class="btn">Post</button>
+            </form>
+        </div>
+
+        <div id="feed-posts" class="posts-list"></div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="feed.js"></script>
+</body>
+</html>
